@@ -1,0 +1,577 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.intro p {
+  font-size: 1.2em;
+  color: #f3f1f1;
+}
+
+/* Add padding to world sections */
+.world4, .world5 {
+  padding: 60px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ensure the content starts at the top */
+}
+#world4 .content {
+  max-height: 80vh; /* Limits height */
+  overflow-y: auto; /* Enables vertical scroll */
+  padding-right: 1rem; /* Adds space for scrollbar */
+  background: rgba(238, 235, 235, 0.6); /* Optional: dim background for readability */
+  border-radius: 10px;
+}
+
+
+.world {
+  min-height: 100vh;
+  padding: 80px 20px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Background images for each world */
+.world1 { background-image: url('imagesbg1.png'); }
+.world2 { background-image: url('imagesbg2.png'); }
+.world3 { background-image: url('imagesbg3.png'); }
+.world4 { background-image: url('imagesbg4.png'); }
+.world5 { background-image: url('imagebg5.png'); }
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: none;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.neon-text {
+  font-size: 4em; /* Increased from 3em */
+  color: #be4138;
+  text-shadow: 0 0 15px #be4138, 0 0 40px #be4138;
+  background: none; /* Ensure there's no background */
+}
+
+
+.register-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: transparent;
+  color: white;
+  border: 2px solid #be4138;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #be4138, 0 0 20px #be4138 inset;
+  transition: 0.3s ease;
+}
+.register-button:hover {
+  background: #be4138;
+  box-shadow: 0 0 20px #be4138;
+}
+
+.section-heading {
+  font-size: 2em;
+  margin-bottom: 20px;
+  background-color: rgba(0,0,0,0.5);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.tab-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0;
+}
+.tab {
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid #be4138;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.tab:hover, .tab.active {
+  background-color: #be4138;
+}
+
+.tab-contents {
+  max-width: 800px;
+  margin: auto;
+}
+.tab-content {
+  display: none;
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+.tab-content.active {
+  display: block;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 0.9em;
+}
+.event-date {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #ffdfdf;
+  text-shadow: 0 0 5px #be4138;
+}
+.college-header {
+  background-color: #2a2b31; /* or #000000 for pure black */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+
+
+.college-name {
+  font-size: 1.8em;
+  margin-bottom: 5px;
+  color: #f8c291;
+}
+
+.college-info {
+  font-size: 0.9em;
+  line-height: 1.4;
+  color: #e0e0e0;
+}
+
+.dept-name {
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+  font-size: 1em;
+  color: #be4138;
+  font-weight: bold;
+}
+/* HEADER STYLES */
+.college-header {
+  background: rgba(66, 65, 65, 0.7);
+  padding: 10px 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.college-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.college-logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+
+.college-name {
+  font-size: 1.8em;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+
+}
+
+.college-info {
+  font-size: 0.75em;
+  color: #ccc;
+  margin-top: 5px;
+  line-height: 1.3;
+}
+
+/* Department inside hero section */
+.hero-dept {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #0e0a00;
+  font-weight: bold;
+}
+.college-header {
+  background-color: #181717; /* Solid black background */
+  display: flex;
+  align-items: center;
+  padding: 10px 20px; /* Reduced padding */
+  color: white;
+  justify-content: flex-start; /* Align items to the left */
+}
+
+.college-logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px; /* Space between logo and text */
+}
+
+.college-name {
+  font-size: 2.2em; /* Reduced size */
+  margin: 0;
+  color: rgb(12, 12, 12); /* Set the text color to white */
+  text-shadow:0 0 10px white;/* White neon glow effect */
+}
+
+
+.college-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.9em;
+  color: #e0e0e0;
+}
+.college-subtext {
+  font-size: 0.9em; /* Reduced size */
+  color: #020202;
+  margin-top: 5px;
+  line-height: 1.2;
+}
+
+.dept-name {
+  align-self: flex-start;
+  margin-top: 80px;
+  margin-left: 40px;
+  font-size: 2.0em;
+  color: white;
+  text-shadow: 0 0 8px white;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.dept-hero-text {
+  font-size: 2.0em;
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 60px;
+  font-weight: bold;
+  width: 100%;
+  padding-left: 0.2px;
+  margin-left:0px;
+  text-shadow:
+    
+  
+    0 0 40px #ffffff;
+  font-family: 'Orbitron', sans-serif;
+}
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.contact-card {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px 25px;
+  border-radius: 12px;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 0 15px #be4138;
+  transition: transform 0.3s ease;
+}
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px #be4138;
+}
+
+.card-icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #be4138;
+  text-shadow: 0 0 10px #be4138;
+}
+
+.map-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: transparent;
+  border: 2px solid #be4138;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 0 10px #be4138 inset;
+  transition: 0.3s;
+}
+.map-button:hover {
+  background-color: #be4138;
+}
+.faq-section {
+  max-width: 800px;
+  margin: 40px auto 0;
+  text-align: left;
+}
+
+.faq-heading {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 0 10px #be4138;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid #be4138;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 15px 20px;
+  text-align: left;
+  font-size: 1em;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.faq-question:hover {
+  background-color: #be4138;
+}
+.faq-answer {
+  max-height: none; /* Allow answers to take full height */
+  overflow: visible; /* Make sure the answer text is fully visible */
+  padding: 0 20px;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 400px; /* Allow for larger content */
+}
+
+
+
+.faq-answer p {
+  padding: 10px 0;
+  margin: 0;
+  color: #e0e0e0;
+}
+
+/* Add a minimum height to world sections */
+.world4, .world5 {
+  min-height: 100vh; /* Ensure it takes at least the full screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ensure content aligns properly */
+}
+@media (max-width: 768px) {
+  .college-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .college-logo {
+    margin-bottom: 10px;
+  }
+  .tab-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+#world4 .content::-webkit-scrollbar {
+  width: 8px;
+}
+
+#world4 .content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+#world4 .content::-webkit-scrollbar-thumb {
+  background: #00ffff;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+#world4 .content::-webkit-scrollbar-thumb:hover {
+  background: #00cccc;
+}
+/* Scrollable container for FAQ section */
+.faq-section {
+  max-height: 400px;  /* Adjust this value to control the scrollable area height */
+  overflow-y: auto;   /* Enables vertical scrolling */
+  margin: 20px;
+  padding: 10px;
+  background-color: #2b2b2b;  /* Dark background for better contrast */
+  border-radius: 10px;
+}
+
+/* Style for each FAQ item */
+.faq-item {
+  margin-bottom: 15px;
+}
+
+/* Question style */
+.faq-question {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00ffff;  /* Cyan color for questions */
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.faq-question:hover {
+  color: #00cccc;  /* Light cyan when hovered */
+}
+
+/* Initially hidden answers */
+.faq-answer {
+  display: none;
+  margin-left: 10px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Show the answer when clicked */
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+/* Ensure white text for tab contents */
+.tab-content {
+  color: white;
+}
+
+/* Ensure white text for world3 and world2 sections */
+.world2, .world3, .world5 {
+  color: white;
+}
+
+/* Optional: enforce white text for all h2, h3, p inside .tab-content */
+.tab-content h2,
+.tab-content h3,
+.tab-content p {
+  color: white;
+}
+.faq-section {
+  background-image: url('imagesbg4.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;  /* This is the key */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+
+.faq-container {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.faq-title {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.faq-box {
+  max-height: 400px;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+
+/* Style for each FAQ item */
+.faq-item {
+  margin-bottom: 15px;
+}
+
+/* Question style */
+.faq-question {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e3e9e9;  /* Cyan color for questions */
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.faq-question:hover {
+  color: #eef0f0;  /* Light cyan when hovered */
+}
+
+/* Initially hidden answers */
+.faq-answer {
+  display: none;
+  margin-left: 10px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Show the answer when clicked */
+.faq-item.active .faq-answer {
+  display: block;
+}
+.college-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.college-logo {
+  width: 80px;
+}
+.college-info {
+  flex: 1;
+}
+.faq-container {
+  padding: 40px;
+  background: #111;
+}
+
+.faq-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #444;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.faq-question {
+  font-weight: bold;
+}
+
+.faq-answer {
+  display: none;
+  padding: 10px 0;
+  color: #ccc;
+}
