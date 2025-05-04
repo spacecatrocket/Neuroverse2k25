@@ -61,6 +61,9 @@ body {
   text-shadow: 0 0 15px #be4138, 0 0 40px #be4138;
   background: none; /* Ensure there's no background */
 }
+.neon-text.set-title{
+  font-size: 35px;
+}
 
 
 .register-button {
