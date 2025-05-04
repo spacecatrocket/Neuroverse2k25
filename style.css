@@ -574,4 +574,12 @@ html {
   display: none;
   padding: 10px 0;
   color: #ccc;
+  text-align: left;
+    padding-left: 25px;
+}
+.faq-answer ul {
+    padding-left: 25px;
+}
+.faq-answer li {
+    text-align: left;
 }
