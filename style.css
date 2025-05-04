@@ -330,7 +330,6 @@ footer {
 .faq-item {
   margin-bottom: 15px;
   border-radius: 8px;
-  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.6);
   border: 1px solid #be4138;
 }
